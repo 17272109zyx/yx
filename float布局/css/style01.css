@@ -1,0 +1,58 @@
+.img-box {
+    border: 1px solid red;
+    position: relative;
+    top: 100px;
+    left: 200px;
+    z-index: 1;
+    display: inline-block;
+    overflow: hidden;
+    background: #70adc4;
+    cursor: pointer;
+    transition: transform .5s, box-shadow .3s;
+}
+
+.img-box img {
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+    float: left;
+}
+
+.img-box .cover {
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+    position: absolute;
+    box-sizing: border-box;
+    color: hotpink;
+}
+
+.img-box .cover h3 {
+    margin-top: 10%;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 0 2px #ccc;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.img-box .cover .con {
+    margin: 20px 0;
+    font-style: italic;
+    font-weight: bold;
+    transform: translateX(-150%);
+}
+
+.img-box .cover .brier {
+    font-size: 12px;
+    transform: translateX(150%);
+}
+
+.img-box .cover .handle {
+    position: absolute;
+    right: 10px;
+    bottom: -50px;
+    font-size: 25px;
+    transition: bottom 1s;
+    /* 对于position的过渡动画, 不能用position, 直接用位置属性: left right top bottom */
+}
