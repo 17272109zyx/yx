@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 400px;
+    height: 400px;
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.test{
+    width: 800px;
+    height: 400px;
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.test button{
+    width: 50px;
+    height: 50px;
+}
+
+#ss{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ss button{
+    width: 80px;
+    height: 30px;
+    border-radius: 3px;
+}
