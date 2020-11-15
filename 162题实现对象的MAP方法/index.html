@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const targetData = {
+    a: 2,
+    b: 3,
+    c: 4,
+    d: 5
+    };
+
+    const objMap = (obj,func)=>{
+        if (typeof func !=="function"){
+            throw new TypeError(`${func}is not a function!` );
+        }
+        return JSON.parse(JSON.stringify(obj,func));
+    };
+    let x = objMap(targetData,(key,val)=>{
+        if (val%2===0){
+            return val/2}
+        return val
+    });
+    console.log(x);
+</script>
+</html>
