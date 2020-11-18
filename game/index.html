@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Generator" content="EditPlus®">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content=""> 
+	<title>水果小游戏</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="./js/index.js"></script>
+</head>
+<body>
+	<div id="box">
+		<div id="top">
+			<p class="title">你的鼠标有多快？</p>
+			<p class="sm">游戏说明：点击“开始游戏”，随机掉下水果，点中它，千万别让他掉下来！！</p>
+			<input class="but" type="button" value="开始游戏">
+		</div>
+		<div id="middle">
+			<div class="left">
+				<p>得分：
+					<span>0</span>分</p>
+				<p>失分：
+					<span>0</span>分</p>
+			</div>
+			<!-- 禁止选取 -->
+			<div class="right" onselectstart="return false">
+			<!-- 禁止鼠标在网页上拖动 -->
+				<img οndragstart="return false" />
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>

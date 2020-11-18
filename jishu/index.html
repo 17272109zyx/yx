@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div class="input-num">
+            <button @click="sub">
+                -
+            </button>
+            <span id="ab" v-text="num">{{num}}</span>
+            <button @click="add">
+                +
+            </button>
+        </div>
+        <!-- <img src="http://www.itheima.com/images/logo.png" alt="" /> -->
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el:"#ab",
+            data:{
+                num:1,
+            },
+            methods:{
+                add:function(){
+                    if(this.num<10){
+                        this.num++;
+                    }else{
+                        alert('别点啦，最大啦！');
+                    }
+                },
+                sub:function(){
+                    if(this.num>0){
+                        this.num--;
+                    }else{
+                        alert('别点啦，最小啦！')；
+                    }
+                }，
+            },
+        })
+    </script>
+</body>
+</html>
+<div id="app">
+    <input type="button" @click="doIt(p1,p2)" />
+    <input type="text" @keyup.enter="sayHi" />
+</div>
