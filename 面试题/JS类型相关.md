@@ -2,20 +2,20 @@ js类型
 
 ## 内置类型
 
-JS 中分为七种内置类型，七种内置类型又分为两大类型：**基本类型**和**对象（Object**）。
+JS 中分为七种内置类型，七种内置类型又分为两大类型：**基本数据类型**和**引用数据类型：对象（Object**）。
 
-基本类型有六种： `null`，`undefined`，`boolean`，`number`，`string`，`symbol`。
+基本数据类型有六种： `null`，`undefined`，`boolean`，`number`，`string`，`symbol`。
 
 其中 JS 的数字类型是浮点类型的，没有整型。并且浮点类型基于 IEEE 754标准实现，在使用中会遇到某些 [Bug](https://yuchengkai.cn/docs/frontend/##为什么-01--02--03)。`NaN` 也属于 `number` 类型，并且 `NaN` 不等于自身。
 
-对于基本类型来说，如果使用字面量的方式，那么这个变量只是个字面量，只有在必要的时候才会转换为对应的类型
+对于基本类型来说，如果使用**字面量**的方式，那么这个变量只是个字面量，只有在必要的时候才会转换为对应的类型
 
 ```js
 let a = 111 // 这只是字面量，不是 number 类型
 a.toString() // 使用时候才会转换为对象类型
 ```
 
-对象（Object）是引用类型，在使用过程中会遇到浅拷贝和深拷贝的问题。
+对象（Object）是引用数据类型，在使用过程中会遇到**浅拷贝和深拷贝**的问题。
 
 ```js
 let a = { name: 'FE' }
@@ -154,4 +154,15 @@ ToPrimitive([]) == 0
 
 1. 如果是对象，就通过 `toPrimitive` 转换对象
 2. 如果是字符串，就通过 `unicode` 字符索引来比较
+
+
+#### 判断js数据类型
+
+### typeof
+
+### instanceof
+
+### constructor
+
+### Object.prototype.toString.call
 
