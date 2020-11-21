@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bt3 {
+    position: relative;
+    width: 180px;
+    height: 70px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #F97F51;
+    transition: all 0.5s;
+}
+
+.bt3:hover {
+    border-radius: 10px 50px 10px 50px;
+    background-color: #F97F51;
+    color: #fff;
+}

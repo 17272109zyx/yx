@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.channel1 {
+    background-color: brown;
+    height: 100px;
+    width: 50vw;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.channel1 span {
+    display: flex;
+}
+
+.channel2 {
+    background-color: yellow;
+    text-align: center;
+    height: 100px;
+    width: 100vw;
+    border-radius: 20px;
+}
+
+.channel3 {
+    background-color: green;
+    height: 100px;
+    border-radius: 20px;
+    width: fit-content;
+    margin: auto;
+}
+
+.channel4 {
+    background-color: blue;
+    height: 100px;
+    border-radius: 20px;
+    line-height: 100px;
+}
+
+.channel5 {
+    background-color: pink;
+    height: 100px;
+    width: 100vw;
+    border-radius: 20px;
+}
+
+.channel5 .child {
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+.channel6 {
+    background-color: gray;
+    height: 200px;
+    width: 100vw;
+    border-radius: 20px;
+    position: relative;
+}
+
+.channel6 .child {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.channel7 {
+    background-color: pink;
+    height: 200px;
+    width: 100vw;
+    border-radius: 20px;
+    position: relative;
+}
+
+.channel7 .child {
+    background-color: rgb(120, 169, 214);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+}
+
+.channel8 {
+    background-color: pink;
+    height: 200px;
+    width: 100vw;
+    border-radius: 20px;
+    position: relative;
+}
+
+.channel8 .child {
+    background-color: rgb(120, 169, 214);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /*本身 */
+}
+
+.channel9 {
+    background-color: rgb(120, 169, 214);
+    height: 200px;
+    width: 100vw;
+    border-radius: 20px;
+    position: relative;
+}
+
+.channel9 .child {
+    background-color: pink;
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /*本身 */
+}
+
+.channel10 {
+    background-color: pink;
+    border-radius: 20px;
+    padding: 50px;
+    position: relative;
+}
+
+.channel10 .child {
+    background-color: rebeccapurple;
+    height: 200px;
+    /*本身 */
+}
+
+.channel11 {
+    background-color: pink;
+    border-radius: 20px;
+    height: 200px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.channel11 .child {
+    background-color: rebeccapurple;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    vertical-align: middle;
+    /*本身 */
+}
+
+.channel11::before {
+    background-color: yellow;
+    height: 200px;
+    width: 20px;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+}
