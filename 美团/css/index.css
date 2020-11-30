@@ -1,0 +1,345 @@
+element.style {
+}
+* {
+    box-sizing: border-box;
+}
+
+html {
+    display: block;
+}
+
+body {
+    height: 3000px;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: block;
+    margin: 8px;
+}
+
+.layout {
+    width: 1200px;
+    height: 3000px;
+    background: #eee;
+    margin: 0 auto;
+}
+
+div {
+    display: block;
+}
+
+#head .logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#head .city {
+    display: inline-block;
+    position: relative;
+    top: -18px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#head .city a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #999;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.icon-meituan {
+    display: inline-block;
+    font-size: 100px;
+    color: #2bb8aa;
+}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+i {
+    font-style: italic;
+}
+
+.icon-meituan:before {
+    content: "\e7cc";
+}
+
+#head .search {
+    margin-bottom: 15px;
+    margin-left: 200px;
+}
+.search {
+    display: inline-block;
+    height: 50px;
+    border: 2px solid #2bb8aa;
+}
+.search .buy {
+    display: inline-block;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 0;
+    border: none;
+    font-size: 16px;
+    border-right: 1px solid #ccc;
+    vertical-align: top;
+}
+* {
+    box-sizing: border-box;
+}
+
+select:not(:-internal-list-box) {
+    overflow: visible !important;
+}
+
+select {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: menulist;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    cursor: default;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    border-radius: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+.search input {
+    display: inline-block;
+    border: none;
+    height: 100%;
+    width: 360px;
+    font-size: 14px;
+    padding: 0;
+    outline: none;
+    vertical-align: top;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+#head .iconlist {
+    float: right;
+    margin-top: 40px;
+}
+
+#head .iconlist div {
+    width: 65px;
+    display: inline-block;
+    text-align: center;
+}
+
+#head .iconlist div {
+    width: 65px;
+    display: inline-block;
+    text-align: center;
+}
+
+#main {
+    border: 1px solid;
+    height: 1000px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#main>.aside-list {
+    float: left;
+}
+.aside-list {
+    width: 240px;
+    border: 1px solid #ccc;
+}
+.aside-list .head {
+    height: 40px;
+    padding-left: 15px;
+    background: #1CAF9A;
+    font-size: 16px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.aside-list .items {
+    padding-left: 10px;
+}
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.aside-list .items>li {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    height: 50px;
+    padding-left: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 50px;
+}
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+ul {
+    list-style-type: disc;
+}
+#main>.ct {
+    background: red;
+    margin-left: 240px;
+    height: 800px;
+}
+.bar {
+    height: 40px;
+    background: #2BB8AA;
+}
+.bar li {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 40px;
+    color: #fff;
+}
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+#main>.ct>.aside-img {
+    float: right;
+    width: 200px;
+    height: 600px;
+    background: #086;
+}
+#main>.ct>.aside-img .weixin {
+    width: 100%;
+}
+#main>.ct>.aside-img .contact {
+    background: red;
+}
+#main>.ct>.suggest {
+    width: 720px;
+    height: 500px;
+    padding-left: 8px;
+    background: #ccc;
+    margin-right: 200px;
+}
+#main>.ct>.suggest>.sg-item>.item li {
+    display: inline-block;
+    float: left;
+    padding: 15px;
+    font-size: 12px;
+}
+#detail {
+    height: 500px;
+    background: #aff;
+    margin-top: 50px;
+}
+#detail>.food, #detail>.fun, #detail>.movie, #detail>.hotel, #detail>.tour {
+    margin-top: 40px;
+}
+#footer {
+    margin-top: 40px;
+}
+#footer .info {
+    text-align: center;
+    min-width: 1140px;
+    height: 500px;
+    padding: 100px 0;
+    color: #fff;
+    background-color: #222;
+    background-image: url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/map-image.png);
+}
+#footer form {
+    text-align: center;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}

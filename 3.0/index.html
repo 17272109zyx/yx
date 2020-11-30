@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引入Vue3.0 -->
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{msg}}</h1>
+    </div>
+    <script>
+        //vue2.0
+        //let app = new Vue({}} 
+        //vue3.0声明式渲染
+        const CountApp = {
+            data(){
+                return{
+                    msg:'雅鑫加油',
+                    count:0
+                }
+            },
+            mounted(){
+                setInterval(()=>{
+                    this.count++
+                },300)
+            }
+        }
+        Vue.createApp(CountApp).mount('#app')
+    </script>
+</body>
+
+</html>
